@@ -1,0 +1,6 @@
+import pickle
+
+model = pickle.load(open("models/water_model.pkl", "rb"))
+
+def predict_water(data):
+    return model.predict([data])
